@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //added here
-        self.view.backgroundColor = UIColor.yellow
+        //self.selectImage.backgroundColor = UIColor.yellowColor()
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
     }
