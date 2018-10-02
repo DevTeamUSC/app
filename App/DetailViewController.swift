@@ -24,6 +24,8 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //added here
+        self.view.backgroundColor = UIColor.yellow
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
     }
