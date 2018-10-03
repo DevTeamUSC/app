@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1CCD598258D0058A33294233 /* Pods_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF0A249E1802D84EC0F8406 /* Pods_AppTests.framework */; };
 		28996D8AE439BF188231F1BF /* Pods_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BE2FC958F7197B78003E31 /* Pods_AppUITests.framework */; };
+		6B128BDB21655AE3004D8616 /* Configuration.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6B128BDA21655AE3004D8616 /* Configuration.rtf */; };
 		6BAD46182162C99C000DDF2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD46172162C99C000DDF2A /* AppDelegate.swift */; };
 		6BAD461B2162C99C000DDF2A /* App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD46192162C99C000DDF2A /* App.xcdatamodeld */; };
 		6BAD461D2162C99C000DDF2A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD461C2162C99C000DDF2A /* MasterViewController.swift */; };
@@ -48,6 +49,7 @@
 		3A81A92522383FEECAEF63B5 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 		4B2AF65B7921723BDA4A40D5 /* Pods-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppTests/Pods-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6AEC78D41DE2E0240E4E3ED2 /* Pods-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppTests/Pods-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B128BDA21655AE3004D8616 /* Configuration.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Configuration.rtf; sourceTree = "<group>"; };
 		6BAD46142162C99C000DDF2A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BAD46172162C99C000DDF2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BAD461A2162C99C000DDF2A /* App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = App.xcdatamodel; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		6BAD46162162C99C000DDF2A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				6B128BDA21655AE3004D8616 /* Configuration.rtf */,
 				6BAD464C2162CD90000DDF2A /* StartViewController.swift */,
 				6BAD464E2162CDA8000DDF2A /* LoginViewController.swift */,
 				6BAD46502162CDB9000DDF2A /* SignUpViewController.swift */,
@@ -199,6 +202,7 @@
 				6BAD46122162C99C000DDF2A /* Resources */,
 				8795FDAE9E1176F45FBFA9E4 /* [CP] Embed Pods Frameworks */,
 				6B128BD92165581C004D8616 /* ShellScript */,
+				7559FB48ED21CF7FEF3FEF51 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BAD46272162C99E000DDF2A /* LaunchScreen.storyboard in Resources */,
+				6B128BDB21655AE3004D8616 /* Configuration.rtf in Resources */,
 				6BAD46242162C99E000DDF2A /* Assets.xcassets in Resources */,
 				6BAD465721634B81000DDF2A /* GoogleService-Info-2.plist in Resources */,
 				6BAD46222162C99C000DDF2A /* Main.storyboard in Resources */,
@@ -358,6 +363,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/Fabric/run\n";
+		};
+		7559FB48ED21CF7FEF3FEF51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-App/Pods-App-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InAppMessagingDisplayResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App/Pods-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		8795FDAE9E1176F45FBFA9E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
