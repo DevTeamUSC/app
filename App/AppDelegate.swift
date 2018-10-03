@@ -9,13 +9,26 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebasePerformance
+
+/*
+ add this to get a trace going in any part of the code
+ let trace = Performance.startTrace(name: "test trace")
+ 
+ To count performance-related events that occur in your app (such as cache hits or retries), add a
+ line of code similar to the following each time that the event occurs, using a string other than
+ retry to name that event if you are counting a different type of event:
+ 
+ trace.incrementMetric(named:"retry", by: 1)
+ 
+ and then to trace.stop()
+*/
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
