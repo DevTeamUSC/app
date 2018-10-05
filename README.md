@@ -13,5 +13,5 @@ git merge develop      # to bring changes to local master from your develop bran
 git push origin master # push current HEAD to remote master branch
 
 //easier//myBranch is the branch you worked on 
-git checkout myBranch
-git push origin myBranch:maste
+.....git checkout myBranch.....
+.....git push origin myBranch:maste.....
